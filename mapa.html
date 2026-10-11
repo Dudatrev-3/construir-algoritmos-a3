@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_59eae2431c61d563d15dc14d78e1f294 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_59eae2431c61d563d15dc14d78e1f294" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_59eae2431c61d563d15dc14d78e1f294 = L.map(
+                "map_59eae2431c61d563d15dc14d78e1f294",
+                {
+                    center: [-23.511052, -46.705493],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89794fa32b2f0467de1d7939675427e1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_89794fa32b2f0467de1d7939675427e1.addTo(map_59eae2431c61d563d15dc14d78e1f294);
+        
+    
+            var marker_2d5f1143ba10000341f9c621d35d49e4 = L.marker(
+                [-23.517339999999997, -46.704061125],
+                {
+}
+            ).addTo(map_59eae2431c61d563d15dc14d78e1f294);
+        
+    
+            var icon_338fe8a82b4be180ce612621d6e25584 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60360e3c6ee22c0a9918521cd0cfebf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99b196aa7a9be9dbae2550a2f37bec60 = $(`<div id="html_99b196aa7a9be9dbae2550a2f37bec60" style="width: 100.0%; height: 100.0%;">Ônibus: 16463</div>`)[0];
+                popup_60360e3c6ee22c0a9918521cd0cfebf5.setContent(html_99b196aa7a9be9dbae2550a2f37bec60);
+            
+        
+
+        marker_2d5f1143ba10000341f9c621d35d49e4.bindPopup(popup_60360e3c6ee22c0a9918521cd0cfebf5)
+        ;
+
+        
+    
+    
+                marker_2d5f1143ba10000341f9c621d35d49e4.setIcon(icon_338fe8a82b4be180ce612621d6e25584);
+            
+    
+            var marker_4dc180bb2211ad4ddf205f815784c966 = L.marker(
+                [-23.511052, -46.705493],
+                {
+}
+            ).addTo(map_59eae2431c61d563d15dc14d78e1f294);
+        
+    
+            var icon_b8bfedd4e4578c6e5b37e80cadd9d77a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f77c01f044e8acb0b1fccc0297d2e85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb8e18c37e1eb28d2dd2f236a5da11c9 = $(`<div id="html_fb8e18c37e1eb28d2dd2f236a5da11c9" style="width: 100.0%; height: 100.0%;">MARGINAL B/C</div>`)[0];
+                popup_8f77c01f044e8acb0b1fccc0297d2e85.setContent(html_fb8e18c37e1eb28d2dd2f236a5da11c9);
+            
+        
+
+        marker_4dc180bb2211ad4ddf205f815784c966.bindPopup(popup_8f77c01f044e8acb0b1fccc0297d2e85)
+        ;
+
+        
+    
+    
+                marker_4dc180bb2211ad4ddf205f815784c966.setIcon(icon_b8bfedd4e4578c6e5b37e80cadd9d77a);
+            
+    
+            var marker_6e1df444553ab9f3997ec91fcfdc116a = L.marker(
+                [-23.50616, -46.706061],
+                {
+}
+            ).addTo(map_59eae2431c61d563d15dc14d78e1f294);
+        
+    
+            var icon_df49c60c20253e4decb2e6e0aef63710 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fed58ce7bd544f3df5be0374ad5ab9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_042e0b04224207502e6bdfe769dde969 = $(`<div id="html_042e0b04224207502e6bdfe769dde969" style="width: 100.0%; height: 100.0%;">PIQUERI B/C</div>`)[0];
+                popup_2fed58ce7bd544f3df5be0374ad5ab9a.setContent(html_042e0b04224207502e6bdfe769dde969);
+            
+        
+
+        marker_6e1df444553ab9f3997ec91fcfdc116a.bindPopup(popup_2fed58ce7bd544f3df5be0374ad5ab9a)
+        ;
+
+        
+    
+    
+                marker_6e1df444553ab9f3997ec91fcfdc116a.setIcon(icon_df49c60c20253e4decb2e6e0aef63710);
+            
+</script>
+</html>
